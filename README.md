@@ -12,6 +12,9 @@
 * styled-components
 * Webpack сборка на клиенте
 
+## Сайт приложения
+http://currenciesconverter.webtm.ru/converter
+
 ## Запуск приложения
 npm install
 
