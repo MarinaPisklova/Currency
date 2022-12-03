@@ -54,7 +54,7 @@ export function Form({setIsShowResult}:{setIsShowResult: Dispatch<SetStateAction
   return (
     <>
       <StyledForm onSubmit={handleClick}>
-        <Input type="text" onChange={handleChange} error={errorForm}/>
+        <Input type="text" onChange={handleChange} error={errorForm} placeholder="15 usd in rub"/>
         <Button disabled={disabled} type="submit">
           Convert
           {converter.loading

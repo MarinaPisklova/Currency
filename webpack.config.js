@@ -60,11 +60,26 @@ module.exports = {
         {
             test: GLOBAL_CSS_REGEXP,
             use: ['style-loader', 'css-loader', 'sass-loader']
+        },
+        {
+            test: /\.(png|jpe?g|gif)$/i,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: '/images/'
+                    }
+                },
+            ],
         }
         ]
     },
     plugins: [
-        new HTMLWebpackPlugin({ template: path.resolve(__dirname, 'index.html') })
+        new HTMLWebpackPlugin({
+            template: path.resolve(__dirname, 'index.html'),
+            favicon: path.resolve(__dirname, 'src/static/favicon.png'),
+        })
     ],
     devServer: {
         historyApiFallback: true,
