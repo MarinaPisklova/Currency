@@ -1,19 +1,19 @@
-# TouchTypingSimulator
+# CurrenciesConverter
 
-![Preview1](https://user-images.githubusercontent.com/77914131/189495312-2bd995b6-cd56-4331-a9f3-0ade0e24ac21.png)
-![Preview2](https://user-images.githubusercontent.com/77914131/189495317-a429bed2-932c-421d-a904-abf9dcf48502.png)
+![Preview](https://user-images.githubusercontent.com/77914131/202859357-467b7678-d709-40dc-ab72-3e08bd3b764a.png)
 
-
-## Реализована frontend часть тренажера слепой печати.
-Основной функционал сервиса - получение текста через публичные API(https://baconipsum.com/json-api/), отображение набираемого текста в реальном времени,
-демонстрация скорости печати, реакция на ввод неверных символов, подсчет точности вводимой информации.
+## Реализована frontend часть SPA для конвертирования валют.
+Сервис состоит из двух страниц. Первая страница - конвертер из одной валюты в другую, странице расположено текстовое поле, в которое можно ввести текст в виде 15 usd in rub и получить результат. Вторая страница - с текущими курсами валют. Использовалось публичное API c https://apilayer.com/.
 
 ## Технологии в проекте
 * JS/TS
 * React
 * Redux
-* Bootstrap/CSS
+* styled-components
 * Webpack сборка на клиенте
+
+## Сайт приложения
+http://currenciesconverter.webtm.ru/converter
 
 ## Запуск приложения
 npm install
